@@ -305,6 +305,23 @@ $climate = fetchData($cityName, "", "");
         </div>
 
     </div>
+
+
+    <script type="text/javascript">
+        const desc = document.querySelector('#description');
+
+        if(desc.innerHTML.includes("clouds")){
+            document.querySelector('body').style.backgroundImage = 'url("https://i.pinimg.com/originals/3b/15/78/3b1578e7da21d44724450f8018582fff.jpg")'
+        }
+        else if(desc.innerHTML.includes("rain")){
+            document.querySelector('body').style.backgroundImage = 'url("https://wallpaperaccess.com/full/688321.jpg")'
+        }
+
+        else if(desc.innerHTML.includes("sky")){
+            document.querySelector('body').style.backgroundImage = 'url("https://wallpaperaccess.com/full/478348.jpg")'
+        }
+        console.log(desc.innerHTML.includes("sun") )
+    </script>
 </body>
 
 </html>
